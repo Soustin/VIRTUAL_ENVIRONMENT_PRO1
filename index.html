@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <script src="https://aframe.io/releases/1.3.0/aframe.min.js"></script>
+    <title>A-Frame Project#1!</title>
+    <!-- <meta charset="utf-8">
+    <meta name="description" content="360&deg; Image - A-Frame">
+    <script src="../../../dist/aframe-master.js"></script> -->
+  </head>
+  <body>
+    <a-scene>
+      <!-- <a-assets>
+        <img id="ground" src="Sandy ground Asset.jpg">
+        <img id="ground-NRM" src="Sand NRM.jpg">
+        <img id="sunny-sky" src="Sunny Hot Sky.jpg">
+        <img id="Wild-West" src="Wild-West.jpg">
+      </a-assets> -->
+
+      <!-- <a-ocean width="200" depth="200" density="40" opacity="1" position="0 -0.4 0"></a-ocean>
+      <a-entity environment="preset: arches" position="0 -0.8 0"></a-entity>
+
+        See https://github.com/donmccurdy/aframe-extras/tree/master/src/primitives for all options
+
+        <a-ocean color="#92E2E2" width="250" depth="250" density="150" speed="2" opacity="0.5"></a-ocean>
+
+        <a-entity id="cameraRig">
+            <a-entity id="head" camera position="0 1.6 0" wasd-controls look-controls>
+            </a-entity>
+            <a-entity oculus-touch-controls="hand: left" raycaster="objects: .collider" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; collisionEntities: .environmentGround .environmentDressing; button: grip"></a-entity>
+            <a-entity oculus-touch-controls="hand: right" raycaster="objects: .collider" teleport-controls="cameraRig: #cameraRig; teleportOrigin: #head; collisionEntities: .environmentGround .environmentDressing; button: grip; type: line"></a-entity>
+      </a-entity> -->
+      <!-- <a-dodecahedron position="0 1.25 -2.25" rotation="1 0.25 1.25" color="green"></a-dodecahedron> -->
+      <a-assets>
+        <img id="sky" src="Wild-West.jpg">
+        <a-asset-items id="car1" src="scene1.gltf"></a-asset-items>
+        <a-asset-items id="car2" src="scene2.gltf"></a-asset-items>
+      </a-assets>
+
+      <a-entity gltf-model="#car1" position="1.25 0.12 -2"></a-entity>
+
+      <a-text value="Flial" width="6" position="0 1.25 -1"
+              rotation="0 15 0"></a-text>
+      <a-icosahedron position="0 1.25 -2.25" rotation="1 0.25 1.25" color="white" scale="0.959 0.959 0.959"></a-icosahedron>
+      <a-sphere position="0 1.25 -2.25" rotation="1 0.25 1.25" color="black" scale="0.89 0.89 0.89"></a-sphere>
+      <a-ring position="0 2.176 -2.05" rotation="35 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.168 -2.05" rotation="45 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+
+      <a-ring position="0 2.272 -2.05" rotation="55 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.256 -2.05" rotation="25 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <a-ring position="0 2.240 -2.05" rotation="15 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.224 -2.05" rotation="35 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <a-ring position="0 2.208 -2.05" rotation="15 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.192 -2.05" rotation="15 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <a-ring position="0 2.176 -2.05" rotation="25 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.160 -2.05" rotation="25 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <a-ring position="0 2.144 -2.05" rotation="25 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.128 -2.05" rotation="15 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <a-ring position="0 2.112 -2.05" rotation="55 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.96 -2.05" rotation="15 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <a-ring position="0 2.80 -2.05" rotation="25 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.64 -2.05" rotation="35 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <a-ring position="0 2.48 -2.05" rotation="35 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2.32 -2.05" rotation="55 50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      
+      <!-- <a-ring position="0 2.16 -2.05" rotation="15 -50 0" color="black" scale="0.13 0.13 0.2"></a-ring>
+      <a-ring position="0 2 -2.05" rotation="25 50 0" color="black" scale="0.13 0.13 0.2"></a-ring> -->
+      <!-- <a-ring position="0 2.-16 -2.05" rotation="35 50 0" color="black" scale="0.13 0.13 0.2"></a-ring> -->
+
+      <a-text value="Dynamite" width="6" position="1.25 0.12 -2"
+              rotation="0 15 0"></a-text>
+      <a-cylinder position="1.25 0.12 -2.5" rotation="5 25 -30" color="red" scale="0.2 0.5 0.2"></a-cylinder>
+      <a-cylinder position="1.40 0.45 -2.5" rotation="5 25 -30" color="white" scale="0.05 0.2 0.02"></a-cylinder>
+
+      <a-text value="Dynamite" width="6" position="-1.25 0.12 -2"
+              rotation="0 15 0"></a-text>
+      <a-cylinder position="-1.25 0.12 -2.5" rotation="-5 -25 30" color="red" scale="0.2 0.5 0.2"></a-cylinder>
+      <a-cylinder position="-1.40 0.45 -2.5" rotation="-5 -25 30" color="white" scale="0.05 0.2 0.02"></a-cylinder>
+
+      <a-text value="Dynamite" width="6" position="0.25 0.12 -4"
+              rotation="0 15 0"></a-text>
+      <a-cylinder position="0.25 0.12 -4.5" rotation="5 25 0" color="red" scale="0.2 0.5 0.2"></a-cylinder>
+      <a-cylinder position="0.30 0.45 -4.5" rotation="5 25 10" color="white" scale="0.05 0.2 0.02"></a-cylinder>
+
+      <a-text value="Dynamite" width="6" position="3.25 0.12 -7"
+              rotation="0 15 0"></a-text>
+      <a-cylinder position="3.25 0.12 -7.5" rotation="5 25 -30" color="red" scale="0.2 0.5 0.2"></a-cylinder>
+      <a-cylinder position="3.40 0.45 -7.5" rotation="5 25 -30" color="white" scale="0.05 0.2 0.02"></a-cylinder>
+      <!-- <a-entity geometry="primitive: torusKnot; p: 6; q:7" position="0 3 -2" color="pink"></a-entity> -->
+      <a-plane color="#F4C079" src="L08-IMGs/55_pavers stone regular blocks texture-seamless.jpg" repeat="1 1" depth="4" position="0 0 -4" rotation="-90 0 0" width="400" height="400" ></a-plane>
+      <!-- color="#F4C079" -->
+      <!-- <a-sky src="Wild-West.jpg" rotation="0 -130 0"></a-sky> -->
+      <a-sky color="#EEB762" radius = "10 10 10"></a-sky>
+    </a-scene>
+  </body>
+</html>
